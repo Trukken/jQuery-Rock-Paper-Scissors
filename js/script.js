@@ -4,6 +4,8 @@ xhttp.onreadystatechange = function () {
     let country = JSON.parse(xhttp.responseText).geoplugin_countryName
     if (country == 'Hungary') {
       alert('Jani egy fasz')
+    }else if (country != 'Hungary') {
+      alert('Hey, this is a rock, paper, scissors game. Have fun.')
     }
   }
 }
