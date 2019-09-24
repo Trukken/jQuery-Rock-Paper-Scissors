@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function () {
     }
   }
 }
-xhttp.open('GET', 'http://www.geoplugin.net/json.gp', true)
+xhttp.open('GET', 'https://www.geoplugin.net/json.gp', true)
 xhttp.send()
 
 // 1 - I click on an icon
