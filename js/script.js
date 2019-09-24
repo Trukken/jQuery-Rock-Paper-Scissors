@@ -1,7 +1,7 @@
 let xhttp = new XMLHttpRequest()
 xhttp.onreadystatechange = function () {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
-    let country = JSON.parse(xhttp.responseText).ountry_name
+    let country = JSON.parse(xhttp.responseText).country_name
     if (country == 'Hungary') {
       alert('Jani egy fasz')
     }else if (country != 'Hungary') {
