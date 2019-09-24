@@ -135,24 +135,33 @@ function displayStatus () {
   console.log(playerNumber, cpuNumber)
   if (playerNumber == 1 && cpuNumber == 2) {
     statusDisplay.text(looser)
+    statusDisplay.css('backgroundColor', 'red')
   } else if (playerNumber == 1 && cpuNumber == 3) {
     statusDisplay.text(winner)
+    statusDisplay.css('backgroundColor', 'green')
   } else if (playerNumber == cpuNumber) {
     statusDisplay.text(draw)
+    statusDisplay.css('backgroundColor', 'gray')
   }
   if (playerNumber == 2 && cpuNumber == 1) {
     statusDisplay.text(winner)
+    statusDisplay.css('backgroundColor', 'green')
   } else if (playerNumber == 2 && cpuNumber == 3) {
     statusDisplay.text(looser)
+    statusDisplay.css('backgroundColor', 'red')
   } else if (playerNumber == cpuNumber) {
     statusDisplay.text(draw)
+    statusDisplay.css('backgroundColor', 'gray')
   }
 
   if (playerNumber == 3 && cpuNumber == 1) {
     statusDisplay.text(looser)
+    statusDisplay.css('backgroundColor', 'red')
   } else if (playerNumber == 3 && cpuNumber == 2) {
     statusDisplay.text(winner)
+    statusDisplay.css('backgroundColor', 'green')
   } else if (playerNumber == cpuNumber) {
     statusDisplay.text(draw)
+    statusDisplay.css('backgroundColor', 'gray')
   }
 }
